@@ -7,7 +7,11 @@ let win;
 
 function createWindow() {
   // create browset window
-  win = new BrowserWindow({width: 1200, height: 920});
+  win = new BrowserWindow({
+    width: 810,
+    height: 810,
+    frame: false
+  });
 
   // load index.html
   win.loadURL(url.format({
